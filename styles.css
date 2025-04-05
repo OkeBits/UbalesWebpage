@@ -1,0 +1,27 @@
+:root {
+    --gradient-start: #a18cd1;
+    --gradient-end: #fbc2eb;
+    --text-color: #333;
+    --card-bg: #fff;
+    --shadow: rgba(0, 0, 0, 0.1);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+  body { background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); min-height: 100vh; color: var(--text-color); overflow-x: hidden; }
+  header, footer { text-align: center; padding: 2rem; color: #fff; }
+  header h1 { font-size: 2.5rem; animation: fadeInDown 1s; }
+  header p { font-size: 1.2rem; margin-top: 0.5rem; animation: fadeInUp 1s; }
+  .section { padding: 3rem 1rem; max-width: 1000px; margin: auto; }
+  .card { background: var(--card-bg); border-radius: 15px; padding: 2rem; box-shadow: 0 10px 25px var(--shadow); margin-bottom: 2rem; transition: transform 0.3s, box-shadow 0.3s; }
+  .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px var(--shadow); }
+  .card h2 { margin-bottom: 1rem; }
+  .featured-image-slider { position: relative; }
+  .featured-image-slider img { width: 100%; border-radius: 10px; }
+  .featured-image-slider button { width: 50%; padding: 1rem; background-color: #6a4c92; color: #fff; border: none; border-radius: 5px; }
+  .portfolio-item img { max-width: 100%; cursor: pointer; }
+  .contact-form input, .contact-form textarea { width: 100%; padding: 1rem; margin-bottom: 1rem; border-radius: 5px; }
+  .form-btn-wrapper button { width: 50%; padding: 1rem; background-color: #6a4c92; color: #fff; border: none; border-radius: 5px; }
+  footer { font-size: 0.9rem; }
+  @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 768px) { header h1 { font-size: 2rem; } .card { padding: 1.5rem; }}
+  
